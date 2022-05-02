@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The gossip project</title>
+</head>
+<body>
+    <h1>PAGE POTIN</h1>
+    <h2>Voici la page des potins</h2>
+    <% gossips.each do |gossip| %>
+      <p>Voici le potin n°<%= id%><br/>
+        Son auteur : <%= gossip.author %><br/>
+        Le potin : <%= gossip.content %><br/>
+      </p>
+    <% end %>
+    <a href="/">Revenir aux potins</a>
+</body>
+</html>
